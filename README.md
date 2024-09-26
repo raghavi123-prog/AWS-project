@@ -41,8 +41,6 @@ ssh -i instance.pem ubunutu@<IP_ADDRESS>
 ```
 sudo apt update
 ```
-3. Install Git - [Guide by DigitalOcean](https://www.digitalocean.com/community/tutorials/how-to-install-git-on-ubuntu-22-04) 
-4. Configure Node.js and `npm` - [Guide by DigitalOcean](https://www.digitalocean.com/community/tutorials/how-to-install-node-js-on-ubuntu-22-04)
 
 ### Deploying the project on AWS
 
@@ -59,7 +57,6 @@ STATIC_DIR="./client"
 PUBLISHABLE_KEY=""
 SECRET_KEY=""
 ```
-> For this project, we'll have to set up an [Elastic IP Address](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/elastic-ip-addresses-eip.html) for our EC2 & that would be our `DOMAIN`
 
 3. Initialise and start the project
 ```
@@ -69,4 +66,4 @@ npm run start
 
 > NOTE - We will have to edit the **inbound rules** in the security group of our EC2, in order to allow traffic from our particular port
 
-### Project is deployed on AWS 🎉
+### Project is deployed on AWS 
